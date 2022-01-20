@@ -13,7 +13,6 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     .section {
-      border-top: 2px blue solid; 
       /* display: flex;
       justify-content:space-around;
       align-items: left;
@@ -21,10 +20,26 @@
       height: 200px;
       width: 200px; 
       padding: 2rem;
-      box-shadow: 2px 2px 2px gray;
+      box-shadow: 2px 2px 5px lightgray, -2px 0 5px lightgray;
       background-color: rgb(255, 255, 255);
       border-radius: 5px;
     }
+    .super-top{
+      border-top: 5px rgb(75, 185, 184) solid; 
+    }
+
+    .team-top{
+      border-top: 5px rgb(221, 90, 88) solid; 
+    }
+
+    .karma-top{
+      border-top: 5px rgb(244, 176, 89) solid; 
+    }
+
+    .calculator-top{
+      border-top: 5px rgb(90, 157, 230) solid; 
+    }
+
     body{
       font-family:Arial, Helvetica, sans-serif;
       background-color: rgb(250, 250, 250);
@@ -33,7 +48,7 @@
       flex-direction: column; */
     }
     p {
-      color: gray;
+       color: gray;
     }
     .center{
       display:flex;
@@ -105,7 +120,7 @@ line-height: 25px;
 </div>
 <div class='container'>
   <div class='column'>
-    <div class='section'>
+    <div class='section super-top'>
       <h4>
         Supervisor
       </h4>
@@ -113,13 +128,13 @@ line-height: 25px;
     </div>
   </div>
   <div class='column'>
-    <div class='section margin-bot' >
+    <div class='section margin-bot team-top' >
       <h4>
         Team Builder
       </h4>
       <p>Scans our talent network to create the optimal team for your project</p>
     </div>
-    <div class='section'>
+    <div class='section karma-top'>
       <h4>
       Karma
       </h4>
@@ -128,7 +143,7 @@ line-height: 25px;
   </div>
 
   <div class='column'>
-    <div class='section'>
+    <div class='section calculator-top'>
       <h4>
         Calculator
       </h4>
@@ -140,7 +155,7 @@ line-height: 25px;
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Doug Bostick</a>.
     </p>
   </footer>
 </body>
